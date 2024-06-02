@@ -113,7 +113,7 @@
          (height (cdr (assoc :height params)))
          (theme (cdr (assoc :theme params)))
          (background-color (cdr (assoc :background-color params)))
-         (cmd (concat (shell-quote-argument mermaid-mmdc-location)
+         (cmd (concat mermaid-node-location " " (shell-quote-argument mermaid-mmdc-location)
                       " -o " (org-babel-process-file-name out-file)
                       " -i " temp-file
                       (when width (format " -w %s" width))
