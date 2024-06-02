@@ -62,6 +62,11 @@
   :group 'extensions
   :link '(url-link :tag "Repository" "https://github.com/abrochard/mermaid-mode"))
 
+(defcustom mermaid-node-location "node"
+  "node location."
+  :type 'string
+  :group 'mermaid-mode)
+
 (defcustom mermaid-mmdc-location "mmdc"
   "Mmdc location."
   :type 'string
